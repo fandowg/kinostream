@@ -1,0 +1,410 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>KINOSTREAM 雲端影城</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/sky-forms.css" type="text/css">
+  <link rel="stylesheet" href="js/owl.carousel/assets/owl.carousel.css">
+  <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style.css?0807" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!--跳出訊息-->
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="btn-close">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class=" modal-word">
+            <div class="sign-box-pop">
+              <h4> <span>已有帳號！登入會員</span> </h4>
+              <form id="sky-form" class="sky-form">
+                <fieldset>
+                  <section>
+                    <div class="row">
+                      <label class="label col col-2">帳號</label>
+                      <div class="col col-10">
+                        <label class="input">
+                          <input type="email" name="email" placeholder="請輸入您註冊時Email">
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <div class="row">
+                      <label class="label col col-2">密碼</label>
+                      <div class="col col-10">
+                        <label class="input">
+                          <input type="password" name="password" placeholder="請輸入密碼" id="password">
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="text-right"> <a href="" target="_blank" class="f-pass"><i class="fa fa-question-circle"></i> 忘記密碼</a> </section>
+                  <section>
+                    <div class="error_msg text-danger"> Default error message </div>
+                  </section>
+                </fieldset>
+                <div class="text-center"> <a href="step2.html" class="btn-b">登入</a> </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--end跳出訊息-->
+
+  <div class="full-top-cloud ">
+    <div class="full-top-cloud-m"> </div>
+
+    <div class="full-top-inner-cloud ">
+      <header class="cloud-head">
+        <nav class="navbar " role="navigation">
+          <div class="container">
+            <a class="navbar-brand" href="#"> <img src="images/logo_cloud.png"> </a>
+            <div class="c-search-box">
+              <form class="" role="search">
+                <div class="c-search ">
+                  <input type="text" class="" placeholder="搜尋電影">
+                  <button type="submit" class=""><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+
+            <!--登入後-->
+            <div class="dropdown nn-right"> <a href="" class="btn-top"> APP下載 </a> <a id="" href="#" class="dropdown-toggle btn-top" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"> Hi 范宇宏 </a>
+              <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="drop3">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="" data-toggle="modal" data-target="#myModal">會員登入</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#buy">馬上加入</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">訂單記錄</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">會員資料</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">登出</a></li>
+              </ul>
+            </div>
+            <!--end登入後-->
+
+        </nav>
+      </header>
+
+      <div class="container">
+        <h1 class="wow fadeIn" data-wow-duration="1.5s"> <img src="images/logo_stream_big_2.png"> </h1>
+        <p class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">隨選隨看，串流不息</p>
+        <a class="join-btn wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.8s" href="#buy"> 立刻加入 </a>
+      </div>
+    </div>
+
+    <div class="c-item">
+      <div class=" container">
+        <ul>
+
+          <!--li class="try-movie-btn"> <a href="try_movie.html"> 線上試片 </a> </li-->
+          <li class="sel"> <a href=""> 特別推薦 </a> </li>
+
+
+          <li> <a href=""> 影展大聽 </a> </li>
+          <li> <a href=""> 大眾娛樂 </a> </li>
+          <li><a href=""> 暗光鳥 </a> </li>
+          <li><a href=""> B級特區 </a> </li>
+          <li><a href=""> 感官世界 </a> </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="cloud-box">
+      <div class="container">
+        <div class="row">
+          <div id="list-fav" class="list-box">
+
+            <!--四部片一組-->
+            <div id="box1" class="list-slider-box">
+              <div class="list-slider">
+                <div class="owl-carousel owl4">
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/1.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/2.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/3.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/4.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-data">
+                <div class="list-data-close"></div>
+                <div class="list-data-l">
+                  <div class="list-data-title">
+                    <h3>音浪青春</h3>
+                    <span>We Are Your Friends</span>
+                  </div>
+                  <div class="list-data-content">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"> <a href="#drama" aria-controls="home" role="tab" data-toggle="tab">劇情簡介</a> </li>
+                      <li role="presentation"> <a href="#movieinfo" aria-controls="profile" role="tab" data-toggle="tab">影片資訊</a> </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="drama"> <span>美國 / 英語 / 限制級</span><br>
+                        <p> ★失親女孩與靈界朋友的跨界激情！跳脫常規、結合恐怖與情慾的懸疑佳作！ 在雙親因車禍意外喪生後，研熙、研秀這對姊妹承受著難以訴說的傷痛，姊姊研熙更每晚遭到鬼魂騷擾，被迫與好兄弟發生性關係。當研熙發現妹妹研秀也同樣遭到鬼魂染指時，她決定不計一切代價，保護妹妹免於色鬼的侵犯。與此同時，一名陌生怪客也不停侵擾這對姊妹，究竟在這一切怪異現象的背後，又隱藏著什麼恐怖秘密呢？ </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="movieinfo"> <span>類型</span>　情慾/異色<br>
+                        <span>片長</span>　87<br>
+                        <span>語言</span>　英語發音<br>
+                        <span>國家</span>　美國<br>
+                        <span>級別</span>　限制級<br>
+                        <span>導演</span>　喬瑟夫高登李維 <br>
+                        <span>卡司</span>　喬瑟夫高登李維/ 史嘉蕾喬韓森 /茱莉安摩爾 /湯尼丹薩 </div>
+                    </div>
+                    <div class="tab-btn"> <a href="" class="btn-R-b2"><i class="fa fa-play-circle"></i> 播放電影</a> <a href="" class="btn-R-b2"><i class="fa fa-heart-o"></i> 收藏</a> </div>
+                  </div>
+                </div>
+                <div class="list-data-r">
+                  <div class="list-data-img">
+                    <iframe width="100%" height="340" src="https://www.youtube.com/embed/EggZ3-WhITU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--end四片一組-->
+
+            <!--四部片一組-->
+            <div id="box2" class="list-slider-box">
+              <div class="list-slider">
+                <div class="owl-carousel owl4">
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/1.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/2.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/3.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/4.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-data">
+                <div class="list-data-close"></div>
+                <div class="list-data-l">
+                  <div class="list-data-title">
+                    <h3>音浪青春</h3>
+                    <span>We Are Your Friends</span>
+                  </div>
+                  <div class="list-data-content">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"> <a href="#drama" aria-controls="home" role="tab" data-toggle="tab">劇情簡介</a> </li>
+                      <li role="presentation"> <a href="#movieinfo" aria-controls="profile" role="tab" data-toggle="tab">影片資訊</a> </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="drama"> <span>美國 / 英語 / 限制級</span><br>
+                        <p> ★失親女孩與靈界朋友的跨界激情！跳脫常規、結合恐怖與情慾的懸疑佳作！ 在雙親因車禍意外喪生後，研熙、研秀這對姊妹承受著難以訴說的傷痛，姊姊研熙更每晚遭到鬼魂騷擾，被迫與好兄弟發生性關係。當研熙發現妹妹研秀也同樣遭到鬼魂染指時，她決定不計一切代價，保護妹妹免於色鬼的侵犯。與此同時，一名陌生怪客也不停侵擾這對姊妹，究竟在這一切怪異現象的背後，又隱藏著什麼恐怖秘密呢？ </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="movieinfo"> <span>類型</span>　情慾/異色<br>
+                        <span>片長</span>　87<br>
+                        <span>語言</span>　英語發音<br>
+                        <span>國家</span>　美國<br>
+                        <span>級別</span>　限制級<br>
+                        <span>導演</span>　喬瑟夫高登李維 <br>
+                        <span>卡司</span>　喬瑟夫高登李維/ 史嘉蕾喬韓森 /茱莉安摩爾 /湯尼丹薩 </div>
+                    </div>
+                    <div class="tab-btn"> <a href="" class="btn-R-b2"><i class="fa fa-play-circle"></i> 播放電影</a> </div>
+                  </div>
+                </div>
+                <div class="list-data-r">
+                  <div class="list-data-img"> <img src="images/test.jpg" width="540" height="340"> </div>
+                </div>
+              </div>
+            </div>
+
+            <!--end四片一組-->
+
+            <!--四部片一組-->
+            <div id="box3" class="list-slider-box">
+              <div class="list-slider">
+                <div class="owl-carousel owl4">
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/1.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/2.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/3.jpg">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-d">
+                      <div class="item-data"> <span>鬼妻</span> </div>
+                      <img src="images/4.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-data">
+                <div class="list-data-close"></div>
+                <div class="list-data-l">
+                  <div class="list-data-title">
+                    <h3>音浪青春</h3>
+                    <span>We Are Your Friends</span>
+                  </div>
+                  <div class="list-data-content">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"> <a href="#drama" aria-controls="home" role="tab" data-toggle="tab">劇情簡介</a> </li>
+                      <li role="presentation"> <a href="#movieinfo" aria-controls="profile" role="tab" data-toggle="tab">影片資訊</a> </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="drama"> <span>美國 / 英語 / 限制級</span><br>
+                        <p> ★失親女孩與靈界朋友的跨界激情！跳脫常規、結合恐怖與情慾的懸疑佳作！ 在雙親因車禍意外喪生後，研熙、研秀這對姊妹承受著難以訴說的傷痛，姊姊研熙更每晚遭到鬼魂騷擾，被迫與好兄弟發生性關係。當研熙發現妹妹研秀也同樣遭到鬼魂染指時，她決定不計一切代價，保護妹妹免於色鬼的侵犯。與此同時，一名陌生怪客也不停侵擾這對姊妹，究竟在這一切怪異現象的背後，又隱藏著什麼恐怖秘密呢？ </p>
+                      </div>
+                      <div role="tabpanel" class="tab-pane" id="movieinfo"> <span>類型</span>　情慾/異色<br>
+                        <span>片長</span>　87<br>
+                        <span>語言</span>　英語發音<br>
+                        <span>國家</span>　美國<br>
+                        <span>級別</span>　限制級<br>
+                        <span>導演</span>　喬瑟夫高登李維 <br>
+                        <span>卡司</span>　喬瑟夫高登李維/ 史嘉蕾喬韓森 /茱莉安摩爾 /湯尼丹薩 </div>
+                    </div>
+                    <div class="tab-btn"> <a href="" class="btn-R-b2"><i class="fa fa-play-circle"></i> 播放電影</a> </div>
+                  </div>
+                </div>
+                <div class="list-data-r">
+                  <div class="list-data-img">
+                    <iframe width="100%" height="340" src="https://www.youtube.com/embed/EggZ3-WhITU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--end四片一組-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="f-left"> <a href="" class=""> 隱私權政策</a> <a href="" class="">服務條款</a> <span> <a href=""> 個人帳戶</a> <a href="">常見問題</a> <a href="">連絡我們</a> </span> </div>
+      <div class="f-right">Copyright © 2016 KINOPASS All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!--Back to top-->
+  <a href="" class="scrollup"><i class="fa fa-chevron-circle-up"></i></a>
+
+  <!--Javascript Plugin-->
+  <script src="js/totop.js" type="text/javascript"></script>
+  <script src="js/owl.carousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      $('.owl4').owlCarousel({
+        items: 4,
+
+        responsiveClass: true,
+
+        responsive: {
+
+
+          1000: {
+            items: 4,
+
+          }
+        }
+
+
+
+      });
+
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+
+      $(".list-data-close").click(function() {
+        $(".list-data").slideUp();
+        $(".item-d").removeClass("active");
+      });
+
+      $("#box1 .item").click(function() {
+        $(".item-d").removeClass("active");
+        $(".list-data").fadeOut();
+        $(this).find(".item-d").addClass("active");
+        $("#box1 .list-data").fadeIn();
+      });
+      $("#box2 .item").click(function() {
+        $(".item-d").removeClass("active");
+        $(".list-data").fadeOut();
+        $(this).find(".item-d").addClass("active");
+        $("#box2 .list-data").fadeIn();
+      });
+      $("#box3 .item").click(function() {
+        $(".item-d").removeClass("active");
+        $(".list-data").fadeOut();
+        $(this).find(".item-d").addClass("active");
+        $("#box3 .list-data").fadeIn();
+      });
+
+    });
+  </script>
+</body>
+
+</html>
